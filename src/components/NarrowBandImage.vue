@@ -1,8 +1,5 @@
 <template>
-  <div class="nbi">
-    <img :src="src" ref="image" @load="startDraw" :style="imgStyle">
-    <p>test</p>
-  </div>
+  <img class="nbi" :src="src" ref="image" @load="startDraw" :style="imgStyle">
 </template>
 
 <script>
@@ -18,7 +15,7 @@ export default {
     }
   },
   methods:{
-    startDraw(event) {
+    startDraw() {
       const dataObj = this;
       const imageObj = this.$refs.image;
       const width = imageObj.width;
@@ -30,21 +27,19 @@ export default {
           dataObj.imgHeight = height;
           clearInterval(dataObj.intervalId);
         }
-        dataObj.imgStyle = "width:" + width + "px;" + "height:" + dataObj.imgHeight + "px;";
+        dataObj.imgStyle = "display:inline;" + "width:" + width + "px;" + "height:" + dataObj.imgHeight + "px;";
       }, 100);
     }
-  },
-  created: function() {
   }
 }
 </script>
 
 <style scoped>
-.nbi {
-}
 
-.nbi > img {
+.nbi {
+  display: none;
   object-fit:none;
   object-position: 0 0;
+  vertical-align: top;
 }
 </style>

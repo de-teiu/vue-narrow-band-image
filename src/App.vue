@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <h1>Vue-Narrow-Band-Image</h1>
     <narrow-band-image src="/sample.jpg"/>
+    <h3>いかがでしたか？</h3>
   </div>
 </template>
 
@@ -22,6 +24,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 </style>
