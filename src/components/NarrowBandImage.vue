@@ -1,5 +1,5 @@
 <template>
-  <img class="nbi" :src="src" ref="image" @load="startDraw" :style="imgStyle">
+  <img class="narrow-band-image" :src="src" ref="image" @load="startDraw" :style="imgStyle">
 </template>
 
 <script>
@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 
-.nbi {
+.narrow-band-image {
   display: none;
   object-fit:none;
   object-position: 0 0;

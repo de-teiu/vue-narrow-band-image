@@ -1,7 +1,13 @@
 {
   "name": "vue-narrow-band-image",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/vue-narrow-band-image.common.js",
+  "license": "MIT",
+  "author": "DE-TEIU",
+  "files": [
+    "dist"
+  ],
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
