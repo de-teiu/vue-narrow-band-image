@@ -1,11 +1,15 @@
-// コンポーネントのインポート
-import component from './components/NarrowBandImage.vue'; //(1)Vueのファイル名に変更
+//引用元
+//Vue コンポーネントを npm パッケージ化する
+//https://jp.vuejs.org/v2/cookbook/packaging-sfc-for-npm.html
+
+// vue コンポーネントのインポート
+import component from './components/NarrowBandImage.vue';
 
 // Vue.use() によって実行される install 関数を定義
 export function install(Vue) {
     if (install.installed) return;
     install.installed = true;
-    Vue.component('MyComponent', component); //(2)コンポーネント名を変更
+    Vue.component('MyComponent', component);
 }
 
 // Vue.use() のためのモジュール定義を作成
