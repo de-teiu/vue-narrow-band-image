@@ -1,29 +1,43 @@
 # vue-narrow-band-image
 
-## Project setup
+## Overview
+
+This is Vue's component for displaying images little by little.
+
+## Setup
+
 ```
-npm install
+npm i vue-narrow-band-image
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## How to use
 
-### Compiles and minifies for production
-```
-npm run build
-```
+1. Import this component and css in your .vue component.
 
-### Run your tests
-```
-npm run test
-```
+```javascript
+import VueNarrowBandImage from 'vue-narrow-band-image';
+import 'vue-narrow-band-image/dist/vue-narrow-band-image.css';
 
-### Lints and fixes files
+export default {
+  components: {
+    VueNarrowBandImage
+  }
+}
 ```
-npm run lint
+2. Set <vue-narrow-band-image> tag in your <template>
+  
+```html
+<template>
+  <div id="app">
+    <h1>Vue-Narrow-Band-Image-Test</h1>
+    <vue-narrow-band-image src="sample.png" :interval=100/>
+  </div>
+</template>
 ```
+### Attributes
+source(required): image file path.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+interval: interval to draw image.(milliseconds)
+
+# Preview
+![Preview](https://i.imgur.com/8IqRB1c.gif)
