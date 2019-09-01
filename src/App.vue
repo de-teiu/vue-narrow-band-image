@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Vue-Narrow-Band-Image</h1>
-    <narrow-band-image src="/sample.jpg"/>
+    <narrow-band-image src="/sample.jpg" :interval="50" />
     <h3>いかがでしたか？</h3>
   </div>
 </template>

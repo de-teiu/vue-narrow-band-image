@@ -5,7 +5,14 @@
 <script>
 export default {
   props: {
-    src: String,
+    src: {
+      type: String,
+      required: true
+    },
+    interval: {
+      type: Number,
+      required: false
+    },
   },
   data: function() {
     return {
@@ -20,6 +27,7 @@ export default {
       const imageObj = this.$refs.image;
       const width = imageObj.width;
       const height = imageObj.height;
+      const drawInterval = !(this.interval) ? 100 : this.interval;
 
       this.intervalId = setInterval(()=>{
         dataObj.imgHeight += Math.floor(Math.random() * 5);
@@ -28,7 +36,7 @@ export default {
           clearInterval(dataObj.intervalId);
         }
         dataObj.imgStyle = "display:inline;" + "width:" + width + "px;" + "height:" + dataObj.imgHeight + "px;";
-      }, 100);
+      }, drawInterval);
     }
   }
 }
