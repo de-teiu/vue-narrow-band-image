@@ -24,7 +24,7 @@ export default {
   }
 }
 ```
-2. Set <vue-narrow-band-image> tag in your <template>
+2. Set vue-narrow-band-image tag in your template
   
 ```html
 <template>
