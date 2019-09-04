@@ -12,7 +12,7 @@ npm i vue-narrow-band-image
 
 ## How to use
 
-1. Import this component and css in your .vue component.
+Import this component and css in your .vue component.
 
 ```javascript
 import VueNarrowBandImage from 'vue-narrow-band-image';
@@ -24,7 +24,7 @@ export default {
   }
 }
 ```
-2. Set vue-narrow-band-image tag in your template
+Set vue-narrow-band-image tag in your template
   
 ```html
 <template>

@@ -1,6 +1,6 @@
 {
   "name": "vue-narrow-band-image",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "main": "dist/vue-narrow-band-image.common.js",
   "unpkg": "./dist/vue-narrow-band-image.umd.min.js",
   "jsdelivr": "./dist/vue-narrow-band-image.umd.min.js",
